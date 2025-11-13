@@ -1,0 +1,3 @@
+export const CONTACT_CONFIG = {
+  WHATSAPP_NUMBER: "351924933390",
+};
