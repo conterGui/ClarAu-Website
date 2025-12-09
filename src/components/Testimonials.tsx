@@ -1,29 +1,18 @@
 import { Star, Quote, PawPrint } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { User } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Mariana Silva",
-    pet: "Thor (Golden Retriever)",
+    name: "Beata",
+    pet: "Sagie",
     text: "A Clara é simplesmente maravilhosa! O Thor fica super animado quando sabe que ela vai passear com ele. Super confiável e carinhosa!",
     rating: 5,
   },
   {
     name: "Roberto Costa",
-    pet: "Luna (Gata Persa)",
+    pet: "Max",
     text: "Precisei viajar e fiquei tranquilo sabendo que a Luna estava em boas mãos. Recebi fotos e atualizações diárias. Recomendo demais!",
-    rating: 5,
-  },
-  {
-    name: "Ana Paula",
-    pet: "Max (Beagle)",
-    text: "O Max tem muita energia e a Clara sabe exatamente como cuidar dele. Os passeios são perfeitos e ele volta cansado e feliz!",
-    rating: 5,
-  },
-  {
-    name: "Carlos Eduardo",
-    pet: "Mel e Nina (Vira-latas)",
-    text: "Tenho duas cachorrinhas e a Clara cuida das duas com o mesmo carinho. É nítido o amor que ela tem pelos animais!",
     rating: 5,
   },
 ];
@@ -58,7 +47,10 @@ export const Testimonials = () => {
               {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-secondary fill-secondary" />
+                  <Star
+                    key={i}
+                    className="w-5 h-5 text-secondary fill-secondary"
+                  />
                 ))}
               </div>
 
@@ -70,7 +62,7 @@ export const Testimonials = () => {
               {/* Author info */}
               <div className="flex items-center gap-3 pt-4 border-t border-accent/20">
                 <div className="bg-gradient-to-br from-secondary to-accent p-3 rounded-full">
-                  <PawPrint className="w-5 h-5 text-white" />
+                  <User className="w-5 h-5 text-white" />
                 </div>
                 <div>
                   <p className="font-bold text-primary">{testimonial.name}</p>

@@ -17,7 +17,6 @@ import { CONTACT_CONFIG } from "@/config/whatsapp";
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -28,7 +27,7 @@ export const ContactForm = () => {
     setIsSubmitting(true);
 
     // Validação básica
-    if (!formData.name || !formData.email || !formData.message) {
+    if (!formData.name || !formData.message) {
       toast({
         title: "Campos obrigatórios",
         description: "Por favor, preencha todos os campos.",
@@ -38,20 +37,8 @@ export const ContactForm = () => {
       return;
     }
 
-    // Validação de e-mail simples
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      toast({
-        title: "E-mail inválido",
-        description: "Por favor, insira um e-mail válido.",
-        variant: "destructive",
-      });
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
-      const { name, email, message } = formData;
+      const { name, message } = formData;
       const phone = CONTACT_CONFIG.WHATSAPP_NUMBER;
 
       const text = `Olá! Meu nome é ${name}.\n\n${message}`;
@@ -71,7 +58,7 @@ export const ContactForm = () => {
         description: "O WhatsApp será aberto com sua mensagem. 🐾",
       });
 
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", message: "" });
     } catch (error) {
       console.error("❌ Erro ao abrir WhatsApp:", error);
       toast({
@@ -131,24 +118,6 @@ export const ContactForm = () => {
               required
             />
           </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="email" className="text-foreground font-semibold">
-              E-mail
-            </Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="seu@email.com"
-              value={formData.email}
-              onChange={(e) =>
-                setFormData({ ...formData, email: e.target.value })
-              }
-              className="bg-white border-2 border-muted focus:border-secondary rounded-xl py-6 text-lg"
-              required
-            />
-          </div>
-
           <div className="space-y-2">
             <Label htmlFor="message" className="text-foreground font-semibold">
               Mensagem

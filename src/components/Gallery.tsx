@@ -7,10 +7,10 @@ import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 
 const images = [
-  { src: gallery1, alt: "Golden retriever brincando no parque" },
-  { src: gallery2, alt: "Gato relaxando na janela" },
-  { src: gallery3, alt: "Passeio ao pôr do sol" },
-  { src: gallery4, alt: "Cachorrinho brincando com brinquedos" },
+  { src: gallery1, alt: "Max" },
+  { src: gallery2, alt: "Sagie" },
+  { src: gallery3, alt: "Max" },
+  { src: gallery4, alt: "Sagie" },
   { src: gallery5, alt: "Gato persa elegante" },
   { src: gallery6, alt: "Grupo de cães felizes" },
 ];

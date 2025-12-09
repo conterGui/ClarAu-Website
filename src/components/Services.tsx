@@ -26,7 +26,7 @@ const services = [
   {
     icon: Home,
     title: "Hospedagem em Casa",
-    description: "Cuidados 24h em ambiente familiar, ideal para pets ansiosos",
+    description: "Cuidados 24h em ambiente familiar, ideal para qualquer pet",
     features: [
       "Atenção individual",
       "Rotina do pet respeitada",
