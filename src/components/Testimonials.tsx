@@ -1,18 +1,18 @@
-import { Star, Quote, PawPrint } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { User } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Beata",
-    pet: "Sagie",
-    text: "A Clara é simplesmente maravilhosa! O Thor fica super animado quando sabe que ela vai passear com ele. Super confiável e carinhosa!",
+    name: "Tânia",
+    pet: "Max",
+    text: "Muitas vezes por conta da rotina corrida, o nosso Max não tinha com quem ficar, e este serviço foi de grande valia, melhor companhia para o Max ele sempre volta feliz. recomendo vivamente...",
     rating: 5,
   },
   {
-    name: "Roberto Costa",
-    pet: "Max",
-    text: "Precisei viajar e fiquei tranquilo sabendo que a Luna estava em boas mãos. Recebi fotos e atualizações diárias. Recomendo demais!",
+    name: "Beata",
+    pet: "Sagie",
+    text: "Precisei viajar e fiquei tranquilo sabendo que a Sagie estava em boas mãos. Recebi fotos e atualizações diárias. Recomendo demais!",
     rating: 5,
   },
 ];
