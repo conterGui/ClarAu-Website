@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "*", // ⚠️ para domínio próprio na raiz
+  base: "/", // ⚠️ para domínio próprio na raiz
   server: {
     host: "::",
     port: 8080,
