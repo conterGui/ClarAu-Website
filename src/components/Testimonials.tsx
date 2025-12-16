@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Beata",
     pet: "Sagie",
-    text: "Precisei viajar e fiquei tranquilo sabendo que a Sagie estava em boas mãos. Recebi fotos e atualizações diárias. Recomendo demais!",
+    text: "Clara foi incrível! Minha cachorra, Sagie, adorou a estadia com ela. Clara se comunicava com frequência, respondia rapidamente e até me mandava fotos de como a Sagie estava durante a estadia na casa dela. Recomendo muito para quem precisa de alguém para cuidar do seu cachorro.(traduzido)",
     rating: 5,
   },
 ];
@@ -56,7 +56,7 @@ export const Testimonials = () => {
 
               {/* Testimonial text */}
               <p className="text-foreground leading-relaxed mb-6 italic relative z-10">
-                "{testimonial.text}"
+                "{testimonial.text}
               </p>
 
               {/* Author info */}
