@@ -11,8 +11,8 @@ const images = [
   { src: gallery2, alt: "Sagie" },
   { src: gallery3, alt: "Max" },
   { src: gallery4, alt: "Sagie" },
-  { src: gallery5, alt: "Gato persa elegante" },
-  { src: gallery6, alt: "Grupo de cães felizes" },
+  { src: gallery5, alt: "Aki" },
+  { src: gallery6, alt: "Xico" },
 ];
 
 export const Gallery = () => {
